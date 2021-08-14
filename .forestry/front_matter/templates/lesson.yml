@@ -1,4 +1,26 @@
 ---
 label: Lesson
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  description: Title of the lesson
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+  description: Short description of the lesson
+- name: video
+  type: file
+  config:
+    maxSize: 64
+  label: Video
+  description: Lesson video
