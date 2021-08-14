@@ -10,5 +10,5 @@
       "video_public_id__cloudinary_": "nuxtjs-video-course-platform/pitbulls"
     }
   ],
-  "image_public_id__cloudinary_": "nuxtjs-video-course-platform/course-preview"
+  "image_public_id__cloudinary_": "nuxtjs-video-course-platform/how-to-identify-dogs/course-preview"
 }
