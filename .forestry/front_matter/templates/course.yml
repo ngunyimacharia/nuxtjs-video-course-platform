@@ -34,3 +34,5 @@ fields:
     min: 
     max: 
   description: Lessons in the course
+pages:
+- content/courses/how-to-identify-dogs.json
