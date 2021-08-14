@@ -3,14 +3,16 @@
   <div class="bg-white overflow-hidden sm:rounded-md">
     <ul>
       <li v-for="(course, idx) in courses" :key="idx" class="m-5 shadow">
-        <a href="" class="block hover:bg-gray-50">
+        <nuxt-link :to="`course/${course.slug}`" class="block hover:bg-gray-50">
           <div class="flex items-center px-4 py-4 sm:px-6">
             <div class="min-w-0 flex-1 flex items-center">
               <div class="flex-shrink-0">
-                <img
+                <cld-image
+                  :public-id="course.image_public_id__cloudinary_"
+                  :alt="course.title"
+                  width="100"
+                  height="100"
                   class="h-12 w-12 rounded-full"
-                  :src="course.image"
-                  alt=""
                 />
               </div>
               <div class="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
@@ -22,16 +24,22 @@
                     {{ course.description }}
                   </p>
                 </div>
-                <div class="hidden md:block">
-                  <div>
-                    <p class="text-sm text-gray-900">
-                      Created on
-                      {{ " " }}
-                      <time :datetime="course.createdAt">{{
-                        course.createdAt
-                      }}</time>
-                    </p>
-                  </div>
+                <div
+                  class="
+                    hidden
+                    md:flex
+                    flex-col
+                    justify-center
+                    text-sm text-gray-900
+                  "
+                >
+                  <span>
+                    Created on
+                    {{ " " }}
+                    <time :datetime="course.createdAt">{{
+                      formatedDate(course.createdAt)
+                    }}</time>
+                  </span>
                 </div>
               </div>
             </div>
@@ -52,13 +60,15 @@
               </svg>
             </div>
           </div>
-        </a>
+        </nuxt-link>
       </li>
     </ul>
   </div>
 </template>
 
 <script>
+import { DateTime } from "luxon";
+
 export default {
   data() {
     return {
@@ -66,7 +76,13 @@ export default {
     };
   },
   async fetch() {
+    console.log(this.$content("courses").fetch());
     this.courses = await this.$content("courses").fetch();
+  },
+  methods: {
+    formatedDate(date) {
+      return DateTime.fromISO(date).toLocaleString(DateTime.DATETIME_MED);
+    },
   },
 };
 </script>
