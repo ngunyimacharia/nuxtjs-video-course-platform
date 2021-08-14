@@ -34,6 +34,12 @@
       "description": "Volkswagen shortened to VW is a German motor vehicle manufacturer founded in 1937 by the German Labour Front, known for their iconic Beetle and headquartered in Wolfsburg.",
       "title": "Volkswagen",
       "video_public_id__cloudinary_": "nuxtjs-video-course-platform/how-to-identify-cars/volkswagen"
+    },
+    {
+      "template": "lesson",
+      "title": "Mercedes",
+      "video_public_id__cloudinary_": "nuxtjs-video-course-platform/how-to-identify-cars/mercedes",
+      "description": "Mercedes-AMG GmbH, commonly known as AMG, is the high-performance subsidiary of Mercedes-Benz AG.[1] AMG independently hires engineers and contracts with manufacturers to customize Mercedes-Benz AMG vehicles. The company has its headquarters in Affalterbach, Baden-Württemberg, Germany. "
     }
   ]
 }
