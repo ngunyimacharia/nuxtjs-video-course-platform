@@ -19,12 +19,12 @@ fields:
       format: markdown
   label: Description
   description: Short description of the course
-- name: image
-  type: file
+- name: image_public_id__cloudinary_
+  type: text
   config:
-    maxSize: 64
-  label: Image
-  description: Preview image of the course
+    required: false
+  label: Image public id (Cloudinary)
+  description: Upload the image in Cloudinary and place the public_id here.
 - name: lessons
   type: blocks
   label: Lessons
