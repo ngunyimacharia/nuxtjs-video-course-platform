@@ -28,6 +28,12 @@
       "title": "Chevrolet",
       "description": "Chevrolet  colloquially referred to as Chevy and formally the Chevrolet Division of General Motors Company, is an American automobile division of the American manufacturer General Motors (GM).",
       "video_public_id__cloudinary_": "nuxtjs-video-course-platform/how-to-identify-cars/chevloret"
+    },
+    {
+      "template": "lesson",
+      "description": "Volkswagen shortened to VW is a German motor vehicle manufacturer founded in 1937 by the German Labour Front, known for their iconic Beetle and headquartered in Wolfsburg.",
+      "title": "Volkswagen",
+      "video_public_id__cloudinary_": "nuxtjs-video-course-platform/how-to-identify-cars/volkswagen"
     }
   ]
 }
