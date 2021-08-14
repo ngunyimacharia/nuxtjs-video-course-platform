@@ -27,7 +27,8 @@ fields:
 - name: lessons
   type: blocks
   label: Lessons
-  template_types: []
+  template_types:
+  - lesson
   config:
     min: 
     max: 
