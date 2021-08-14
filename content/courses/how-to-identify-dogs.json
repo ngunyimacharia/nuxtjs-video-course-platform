@@ -1,7 +1,6 @@
 {
   "title": "How to identify dogs",
   "description": "There are many different species of dogs. Let's learn how to identify different species",
-  "image": "/v1628937308/nuxtjs-video-course-platform/pexels-nancy-guth-850602_hcayoa.jpg",
   "lessons": [
     {
       "template": "lesson",
