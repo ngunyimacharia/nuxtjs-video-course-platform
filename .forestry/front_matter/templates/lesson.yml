@@ -18,9 +18,9 @@ fields:
       format: markdown
   label: Description
   description: Short description of the lesson
-- name: video
-  type: file
+- name: video_public_id__cloudinary_
+  type: text
   config:
-    maxSize: 64
-  label: Video
-  description: Lesson video
+    required: false
+  label: Video Public Id (Cloudinary)
+  description: Upload video into Cloudinary and place the public_id here.
