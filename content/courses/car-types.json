@@ -22,6 +22,12 @@
       "title": "BMW",
       "video_public_id__cloudinary_": "nuxtjs-video-course-platform/how-to-identify-cars/bmw",
       "description": "Bayerische Motoren Werke AG, commonly referred to as BMW, is a German multinational corporation which produces luxury vehicles and motorcycles headquartered in Munich, Germany."
+    },
+    {
+      "template": "lesson",
+      "title": "Chevrolet",
+      "description": "Chevrolet  colloquially referred to as Chevy and formally the Chevrolet Division of General Motors Company, is an American automobile division of the American manufacturer General Motors (GM).",
+      "video_public_id__cloudinary_": "nuxtjs-video-course-platform/how-to-identify-cars/chevloret"
     }
   ]
 }
