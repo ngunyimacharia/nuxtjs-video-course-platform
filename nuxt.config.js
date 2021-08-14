@@ -37,12 +37,18 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    '@nuxtjs/cloudinary'
   ],
-
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  cloudinary: {
+    cloudName: process.env.NUXT_ENV_CLOUDINARY_CLOUD_NAME,
+    secure: true,
+    useComponent: true
   }
 }
