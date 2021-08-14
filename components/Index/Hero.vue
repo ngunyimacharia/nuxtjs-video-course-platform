@@ -29,6 +29,10 @@
         <p class="max-w-xl mt-5 mx-auto text-xl text-gray-500">
           Easily create a video course platform for your various needs
         </p>
+        <p class="max-w-xl mt-5 mx-auto text-sm text-gray-500">
+          Images and videos from
+          <a href="https://pexels.com" target="_blank">pexels.com</a>
+        </p>
       </div>
     </div>
   </div>
