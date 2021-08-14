@@ -22,6 +22,7 @@
         class="object-cover pointer-events-none group-hover:opacity-75"
       />
       <button
+        @click="show = true"
         type="button"
         class="absolute h-full w-full inset-0 focus:outline-none text-gray-100"
       >
@@ -55,6 +56,19 @@
     <p class="block text-sm font-medium text-gray-500 pointer-events-none">
       {{ lesson.description }}
     </p>
+    <template>
+      <vue-final-modal v-model="show" class="grid align-center">
+        <cld-video
+          :public-id="lesson.video_public_id__cloudinary_"
+          alt=""
+          class="m-auto w-2/3 bg-white"
+          controls="true"
+        />
+      </vue-final-modal>
+    </template>
+  </div>
+</template>
+
   </div>
 </template>
 
@@ -65,6 +79,11 @@ export default {
       required: true,
       type: Object,
     },
+  },
+  data() {
+    return {
+      show: false,
+    };
   },
 };
 </script>
