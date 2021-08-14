@@ -1,0 +1,35 @@
+<template>
+  <div class="bg-gray-200">
+    <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h2
+          class="
+            text-base
+            font-semibold
+            text-indigo-600
+            tracking-wide
+            uppercase
+          "
+        >
+          EDUCATION
+        </h2>
+        <p
+          class="
+            mt-1
+            text-4xl
+            font-extrabold
+            text-gray-900
+            sm:text-5xl
+            sm:tracking-tight
+            lg:text-6xl
+          "
+        >
+          Simple Video Course Platform
+        </p>
+        <p class="max-w-xl mt-5 mx-auto text-xl text-gray-500">
+          Easily create a video course platform for your various needs
+        </p>
+      </div>
+    </div>
+  </div>
+</template>
