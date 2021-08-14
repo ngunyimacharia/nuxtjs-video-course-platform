@@ -163,8 +163,6 @@ export default {
   async asyncData({ $content, params }) {
     const course = await $content("courses", params.slug).fetch();
 
-    console.log(course);
-
     return { course };
   },
   data() {

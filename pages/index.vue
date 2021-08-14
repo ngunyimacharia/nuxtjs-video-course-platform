@@ -1,7 +1,7 @@
 <template>
   <div>
     <Hero />
-    <CourseList />
+    <CourseList :courses="courses" />
   </div>
 </template>
 
@@ -13,6 +13,11 @@ export default {
   components: {
     Hero,
     CourseList,
+  },
+  async asyncData({ $content }) {
+    const courses = await $content("courses").fetch();
+
+    return { courses };
   },
 };
 </script>

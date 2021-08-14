@@ -70,14 +70,14 @@
 import { DateTime } from "luxon";
 
 export default {
-  data() {
-    return {
-      courses: [],
-    };
+  props: {
+    courses: {
+      type: Array,
+      required: true,
+    },
   },
-  async fetch() {
-    console.log(this.$content("courses").fetch());
-    this.courses = await this.$content("courses").fetch();
+  data() {
+    return {};
   },
   methods: {
     formatedDate(date) {
