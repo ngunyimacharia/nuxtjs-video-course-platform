@@ -8,5 +8,9 @@
       "description": "",
       "video_public_id": ""
     }
+  ],
+  "image_public_id__cloudinary_": "nuxtjs-video-course-platform/how-to-identify-cars/course-preview.jpg",
+  "lessons": [
+
   ]
 }

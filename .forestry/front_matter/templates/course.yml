@@ -35,4 +35,5 @@ fields:
     max: 
   description: Lessons in the course
 pages:
+- content/courses/car-types.json
 - content/courses/how-to-identify-dogs.json
